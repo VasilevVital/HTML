@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website Tab Title</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- we can link to web version of latest js as per bellow -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <!-- or to our local downloaded version -->
+    <!-- // <script type="text/javascript" src="/jquery/jquery-1.11.3.min.js"></script> -->
+
+    <style>
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <script>
+        // $(".square").click(function()
+        // {
+        //     alert($(".square").css("width"));
+        // })
+
+        // select the item that was clicked any element!
+        $("div").click(function()
+        {
+            // alert($(this).css("width"));
+
+            // use this to change the value
+            // $(this).css("width","400px");
+
+            // remove style
+            // $(this).css("display","none");
+
+            // or do it hide like this
+            // $(this).hide();
+
+            // fade out element
+            $(this).fadeOut();
+        })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Juans Website</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- we can link to web version of latest js as per bellow -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <style>
+                .square{
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    margin-top: 10px;
+                    }
+        </style>
+    </head>
+    <body>
+        <p></p>
+
+        <script>
+        	// case sensitive
+        	// var regex=/great/;
+
+        	// case insensitive
+        	// var regex=/great/i;
+
+        	// global every instance
+        	var regex=/e/g;
+
+        	var string="regex is great";
+
+        	// outputs null if not found
+        	var result=string.match(regex);
+        	alert(result);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website Tab Title</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- we can link to web version of latest js as per bellow -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <!-- or to our local downloaded version -->
+        <!-- // <script type="text/javascript" src="/jquery/jquery-1.11.3.min.js"></script> -->
+        <style>
+                .square{
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    margin-top: 10px;
+                }
+                #circle{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 100px;
+                    background-color: green;
+                }
+        </style>
+    </head>
+    <body>
+        <div id="circle"></div>
+        <script>
+                // $("#circle").click(function(){
+                //         $(this).animate({width:"300px"}, 1000);
+                // });
+
+            $("#circle").click(function() {
+                $(this).animate({
+                width:"300px",
+                height:"300px",
+                borderRadius:"150px",
+                marginLeft:"100px",
+                marginTop:"100px"
+                },800);
+            });
+        </script>
+    </body>
+</html>

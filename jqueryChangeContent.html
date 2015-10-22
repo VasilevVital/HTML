@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website Tab Title</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- we can link to web version of latest js as per bellow -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <!-- or to our local downloaded version -->
+    <!-- // <script type="text/javascript" src="/jquery/jquery-1.11.3.min.js"></script> -->
+
+    <style>
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 10px;
+
+        }    
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+    <div class="square"></div>
+    <p>This is some text!</p>
+    <iframe src="http://www.cnn.com"></iframe>
+    
+    <script>
+        // powerfull select by type ie.all <div>'s
+        $("div").click(function()
+        {
+            // change content of the text on click the square
+            $("p").html("This text has been changed!!");
+
+            // alert the contents of an item
+            alert($("p").html())
+        })
+
+        $("div").hover(function()
+        {
+            $("p").html("CHANGED on hover!");
+        })
+
+        $("iframe").hover(function()
+        {
+            $("iframe").attr("src", "http://www.jlopez.co.uk");
+        })
+
+    </script>
+
+</body>
+</html>

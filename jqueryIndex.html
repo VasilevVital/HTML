@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website Tab Title</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- we can link to web version of latest js as per bellow -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <!-- or to our local downloaded version -->
+    <!-- // <script type="text/javascript" src="/jquery/jquery-1.11.3.min.js"></script> -->
+
+    <style>
+        #circle{
+            width=200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: green;
+        }
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 10px;
+
+        }    
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    
+    <script>
+        $("#circle").click(function()
+        {
+            alert("circle clicked");
+        })
+
+        $(".square").click(function()
+        {
+            alert("square clicked");
+        })
+
+        // powerfull select by type ie.all <div>'s
+        $("div").click(function()
+        {
+            alert("clicked");
+        })
+
+        // // jquery check installed
+        // if (typeof jQuery !="undefined")
+        // {
+        //     alert  ("jquery is installed");
+        // } 
+        // else    
+        // {
+        //     alert  ("jquery is not installed");
+        // }
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sample Page</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+<body>
+	<!-- <p>What is the weather?</p> -->
+	<input id="answer"/>
+	<button id="mybutton">Submit</button>
+
+	<script type="text/javascript">
+	document.getElementById("mybutton").onclick=function()
+	{
+		// var x=2;
+		var x=Math.random();
+
+		x=x*6;
+		x=Math.floor(x);
+		if(x==document.getElementById("answer").value)
+		{
+			alert("Correct!");
+		}
+		else
+		{
+			alert("Incorrect the answer was " + x);
+		}
+		// alert(Math.pow(x,3));
+		// alert(3*x);
+		// alert(Math.random());
+		// if (x==1)
+		// {
+		// 	alert("x is 1 !");
+		// }
+		// else
+		// {
+		// 	alert("x is not 1 !");
+		// }
+
+	}
+
+	</script>
+
+
+
+</body>
+</html>

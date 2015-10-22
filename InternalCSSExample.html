@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My First Web page</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <style type="text/css">
+            p {
+                color: red;
+            }
+            .large {
+                font-size: 250%;
+            }
+            #uniqueid{
+                color: green;
+             }
+            .underline{
+                text-decoration: underline;
+            }
+            .bold{
+                font-weight: bold;
+            }
+            
+            .bluebox{
+                background-color: #4A5AAE;
+                width: 300px;
+                height: 100px;
+                float: right;
+            }
+            .greenbox{
+                background-color: #76F076;
+                width: 300px;
+                height: 100px;
+                float: left;
+            }
+            .clear{
+                clear: both;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="bluebox">
+            <p class="large">bluebox div style</p>
+        </div>
+        <div class="greenbox">
+            <p class="large">greenbox div style</p>
+        </div>
+
+        <p class="clear">This is some more paragraph text clear the divs put beneath</p>
+
+        <p class="large">This is some large paragraph text</p>
+        <p id="uniqueid">This is some more paragraph id text use id's for things that appear once</p>
+        <p>This is some single <span class="underline">word</span> highlighting with span example</p>
+        
+        <p>Multiple style <span class="underline large bold">combined</span> separated with a single space example</p>
+        <p id="uniqueid" class="large">Multiple style ID and class combined.</p>
+
+    </body>
+</html>

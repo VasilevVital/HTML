@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sample Page</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+<body>
+	<input id="MyInput" type="text" value="test"/>
+
+	<button id="styleChanger">Change first div styles</button>
+
+	<div id="firstDiv">This is some text</div>
+
+	<script type="text/javascript">
+
+		var divId="firstDiv";
+		var newText=document.getElementById("MyInput").value;
+		document.getElementById("styleChanger").onclick=function(){
+			// document.getElementById("firstDiv").innerHTML="This is awesome";
+			// document.getElementById(divId).style.display="none";
+			newText=document.getElementById("MyInput").value;
+			document.getElementById("firstDiv").innerHTML=newText;
+		}
+
+	</script>
+
+
+
+</body>
+</html>
